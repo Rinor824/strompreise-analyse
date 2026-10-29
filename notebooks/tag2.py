@@ -12,7 +12,7 @@ def durchschnitt(liste):
 
 def ueberschnitt(tagListe, preisListe):
     limit = durchschnitt(preisListe)
-    print(f"------Preise über den Durchschnitt von {limit} €------")
+    print(f"------Preise über den Durchschnitt von {limit}cent------")
     for tag, preis in zip(tagListe, preisListe):
         if preis > limit:
             print(f"{tag}: {preis}")
